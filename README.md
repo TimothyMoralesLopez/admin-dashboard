@@ -1,1 +1,1 @@
-# admin-dashboard
+This is my Admin Dashboard Project. I am feeling fairly confident going into this project. Again, I am not the strongest in CSS, but I feel like I am getting the hang of Grid and how it works. This project will test my Grid abilities (and maybe some of my Flexbox abilities - might need a refresher on that), but I feel like this project won't take me too, too long to complete. 
