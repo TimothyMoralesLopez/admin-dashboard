@@ -1,6 +1,19 @@
+@font-face {
+  font-family: "Roboto";
+  src: url('fonts/roboto-variablefont_wdthwght-webfont.woff2') format('woff2'),
+       url('fonts/roboto-variablefont_wdthwght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
     padding:0;
     margin:0; 
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
 }
 
 .container {
@@ -14,20 +27,40 @@
     color:white; 
     grid-column: 1 / 2;
     grid-row: 1 / 6; 
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 3fr repeat(5, 1fr) 2fr repeat(3, 1fr);
+    row-gap: 15px; 
+    column-gap: 10px;
 }
 
-.dashboard > ul {
-    list-style-type:none;
+.dashboard-span {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self:center; 
 }
 
-p > img {
+.dashboard-image {
     width:30px;
     height:30px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2; 
+    margin:auto; 
 }
 
-li > img {     
-    width:15px;
-    height:15px;
+img:not(.dashboard-image) {     
+    width:20px;
+    height:20px;
+    margin:auto;
+    grid-column: 1 / 2; 
+}
+
+img[src*="communities"] {
+    margin-top:0;  
+}
+
+img + span {
+    grid-column: 2 / 3;
 }
 
 .header {
