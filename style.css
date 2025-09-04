@@ -1,0 +1,42 @@
+* {
+    padding:0;
+    margin:0; 
+}
+
+.container {
+    display:grid;
+    grid-template-columns: 1fr repeat(3, 2fr);
+    grid-template-rows: repeat(2, 1fr) repeat(3, 2fr);
+}
+
+.dashboard {
+    background-color: skyblue;
+    color:white; 
+    grid-column: 1 / 2;
+    grid-row: 1 / 6; 
+}
+
+.dashboard > ul {
+    list-style-type:none;
+}
+
+p > img {
+    width:30px;
+    height:30px;
+}
+
+li > img {     
+    width:15px;
+    height:15px;
+}
+
+.header {
+    grid-column: 2 / 5; 
+    grid-row: 1 / 3; 
+}
+
+.content {
+    background-color: lightgray; 
+    grid-column: 2 / 5;
+    grid-row: 3 / 6; 
+}
