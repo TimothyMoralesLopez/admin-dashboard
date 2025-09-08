@@ -32,6 +32,7 @@ body {
     grid-template-rows: 3fr repeat(5, 1fr) 2fr repeat(3, 1fr);
     row-gap: 15px; 
     column-gap: 10px;
+    align-items:start;
 }
 
 .dashboard-span {
@@ -174,13 +175,22 @@ body {
     grid-template-rows: repeat(3, 1fr);
     grid-row: 2 / 5;
     gap: 15px;
-    margin:15px;
+    justify-items: center;
 }
 
 .content .card {
     background-color: white;
     border-radius: 10px;
     border:white;
+    border-left: 10px solid goldenrod;
+    padding:30px; 
+    height:200px;
+    width:450px;    
+    position:relative; 
+}
+
+.content .card h5 {
+    margin-bottom:5px; 
 }
 
 .content .card div {
@@ -190,6 +200,14 @@ body {
 .content .card img {
     height:20px;
     width:20px; 
+    margin:0px 10px 0px 10px; 
+}
+
+.content .card .imgs-div {
+    position:absolute;
+    bottom:0; 
+    right:0; 
+    padding:15px; 
 }
 
 .content .tab {
