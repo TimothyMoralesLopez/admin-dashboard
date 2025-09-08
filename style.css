@@ -114,7 +114,7 @@ body {
     align-items:center;
     display:grid;
     grid-template-columns: 50px 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     padding-left: 25px;
 }
 
@@ -124,6 +124,14 @@ body {
 
 .greeting-div span {
     grid-column: 2 / 3;
+}
+
+.greeting-div span:nth-of-type(1) {
+    align-self:flex-end;
+}
+
+.greeting-div span:nth-of-type(2) {
+    align-self:flex-start;
 }
 
 .buttons-div {
@@ -144,6 +152,54 @@ body {
 
 .content {
     background-color: lightgray; 
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 30px 1fr 30px 1fr;
     grid-column: 2 / 5;
     grid-row: 3 / 6; 
+}
+
+.content span {
+    margin-left:5px;
+}
+
+.content .trending-span {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.content .projects-div {
+    display:grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row: 2 / 5;
+    gap: 15px;
+    margin:15px;
+}
+
+.content .card {
+    background-color: white;
+    border-radius: 10px;
+    border:white;
+}
+
+.content .card div {
+    font-size:10px; 
+}  
+
+.content .card img {
+    height:20px;
+    width:20px; 
+}
+
+.content .tab {
+    background-color:white;
+    border-radius:10px;
+}
+
+.content .trending-div {
+    background-color:white;
+    border-radius: 10px;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
 }
